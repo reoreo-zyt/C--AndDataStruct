@@ -38,3 +38,5 @@ Lua程序设计（第4版） (罗伯拖·鲁萨利姆斯奇) (z-lib.org).epub
 C图解教程第5版 (Daniel M.Solis) (z-lib.org).pdf
 JavaScript高级程序设计（第4版） (Matt Frisbie) (z-lib.org).pdf
 C++ Primer Plus 第6版 中文版 (Stephen Prata) (z-lib.org).pdf
+questions/binarySearch/cs/bin/*
+questions/binarySearch/cs/obj/Debug/*

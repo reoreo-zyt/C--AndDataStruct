@@ -11,6 +11,8 @@ int binarySearch(vector<int> &nums, int target)
     int left = 0, right = nums.size() - 1;
     while (left <= right)
     {
+        // ! 正数的右移相当于除法，右移几位就除以2的几次方
+        // int mid = left + (right - left) / 2;
         int mid = left + ((right - left) >> 1);
         if (nums[mid] == target)
         {
