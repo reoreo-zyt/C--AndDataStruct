@@ -12,6 +12,11 @@ int binarySearch(vector<int> &nums, int target)
     while (left <= right)
     {
         // ! 正数的右移相当于除法，右移几位就除以2的几次方
+        /*
+         * left + (right - left) / 2 这是防止整型溢出的写法。
+         * 实际的 (right + left) / 2 求中点会导致溢出的风险，导致 mid 的计算结果也不准确。
+         * left / 2 + right / 2
+         */
         // int mid = left + (right - left) / 2;
         int mid = left + ((right - left) >> 1);
         if (nums[mid] == target)
